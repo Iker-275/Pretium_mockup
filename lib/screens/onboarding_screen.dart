@@ -95,6 +95,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   activeShape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(25))),
                 ),
+                onChange: (index) {
+                  setState(() => _currentIndex = index);
+                },
               ),
             ),
             Padding(
