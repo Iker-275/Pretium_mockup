@@ -71,7 +71,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, AppRoutes.login);
                 },
-                child: const Text("Skip"),
+                child: const Text(
+                  "Skip",
+                  style: TextStyle(color: Colors.grey),
+                ),
               ),
             ),
             Expanded(
